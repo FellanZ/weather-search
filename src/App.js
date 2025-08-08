@@ -1,21 +1,27 @@
 import React from "react";
-
+import Weather from "./Weather";
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Weather app</h1>
-      <footer>
-        This project was coded by{" "}
-        <a href="https://github.com/FellanZ" target="_blank">
-          Felicia Z
-        </a>{" "}
-        and is{" "}
-        <a href="https://github.com/FellanZ/weather-search" target="_blank">
-          open-sourced on GitHub
-        </a>
-      </footer>
+      <div className="container">
+        <Weather />
+        <footer>
+          This project was coded by{" "}
+          <a href="https://github.com/FellanZ" target="_blank" rel="noreferrer">
+            Felicia Z
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/FellanZ/weather-search"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-sourced on GitHub
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
