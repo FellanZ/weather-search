@@ -11,9 +11,9 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-Temperature:(response.data.temperature.current);      
-humidity: response.data.temperature.humidity,
-      date: new Date(response.data.dt * 1000),
+      temperature: response.data.temperature.current,
+      humidity: response.data.temperature.humidity,
+      date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
       wind: response.data.wind.speed,
