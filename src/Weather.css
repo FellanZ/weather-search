@@ -28,27 +28,29 @@
   list-style: none;
 }
 
-.Weather img {
+.Weather .weather-icon {
   height: 64px;
   width: 64px;
   margin-right: 10px;
-  vertical-align: middle;
-  display: inline-block;
+}
+
+.Weather .temperature-container {
+  display: flex;
+  align-items: flex-start;
 }
 
 .Weather .temperature {
-  font-weight: bold;
-  color: rgb(33, 33, 33);
   font-size: 64px;
   font-weight: 400;
+  line-height: 1;
+  color: rgb(33, 33, 33);
 }
 
 .Weather .unit {
-  color: rgb(33, 33, 33);
   font-size: 16px;
   font-weight: 400;
-  position: relative;
-  line-height: 1;
-  top: -34px;
+  color: rgb(33, 33, 33);
   margin-left: 5px;
+  position: relative;
+  top: 4px;
 }
